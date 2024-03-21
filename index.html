@@ -1,7 +1,45 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>搜索框示例</title>  
+<style>  
+    /* 简单的样式，使搜索框更美观 */  
+    .search-container {  
+        width: 300px;  
+        margin: 20px auto;  
+    }  
+    input[type=text] {  
+        width: 100%;  
+        padding: 12px 20px;  
+        margin: 8px 0;  
+        display: inline-block;  
+        border: 1px solid #ccc;  
+        box-sizing: border-box;  
+    }  
+    input[type=submit] {  
+        width: 100%;  
+        background-color: #4CAF50;  
+        color: white;  
+        padding: 14px 20px;  
+        margin: 8px 0;  
+        border: none;  
+        cursor: pointer;  
+    }  
+    input[type=submit]:hover {  
+        background-color: #45a049;  
+    }  
+</style>  
+</head>  
+<body>  
+  
+<div class="search-container">  
+    <form action="/search" method="get">  
+        <input type="text" id="mySearch" name="q" placeholder="搜索...">  
+        <input type="submit" value="搜索">  
+    </form>  
+</div>  
+  
+</body>  
 </html>
